@@ -25,7 +25,7 @@ A clean and modern To-Do List application built with HTML, CSS, and JavaScript.
 
 ## Live Demo
 
-[Add your GitHub Pages link here after deployment]
+[ https://amitchoudhary-code.github.io/To-do-List/]
 
 ## Project Structure
 
