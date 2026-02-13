@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    height: 100vh;
+    background: #f4f6f9;
+}
+
+.app {
+    display: flex;
+    height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 250px;
+    background: #1e293b;
+    color: white;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar h2 {
+    margin-bottom: 30px;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu li {
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    transition: 0.3s;
+}
+
+.menu li:hover {
+    background: #334155;
+}
+
+.clear-btn {
+    margin-top: auto;
+    padding: 10px;
+    background: #ef4444;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* MAIN AREA */
+.main {
+    flex: 1;
+    padding: 40px;
+    overflow-y: auto;
+    background-image: url('to_do _list_image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.85);
+    z-index: 0;
+}
+
+.header, #taskList {
+    position: relative;
+    z-index: 1;
+}
+
+.header {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.header input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.header button {
+    padding: 12px 20px;
+    background: #2563eb;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* TASK LIST */
+#taskList {
+    list-style: none;
+}
+
+.task-item {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.task-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.task-left input {
+    width: 18px;
+    height: 18px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.delete-btn {
+    background: #ef4444;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.sidebar-image {
+    width: 100%;
+    max-width: 180px;
+    margin: 0 auto 20px auto;
+    display: block;
+    border-radius: 10px;
+}

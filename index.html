@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <img src="man-todo.png" alt="To-Do Man" class="sidebar-image">
+        <h2>TO-DO-LIST</h2>
+
+        <ul class="menu">
+            <li onclick="filterTasks('all')">📋 All Tasks</li>
+            <li onclick="filterTasks('pending')">🕒 Pending</li>
+            <li onclick="filterTasks('completed')">✅ Completed</li>
+        </ul>
+
+        <button class="clear-btn" onclick="clearCompleted()">Clear Completed</button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+        <div class="header">
+            <input type="text" id="taskInput" placeholder="Add new task...">
+            <button onclick="addTask()">Add</button>
+        </div>
+
+        <ul id="taskList"></ul>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
